@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe0f0, #ffc4dd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    text-align: center;
+}
+
+.game {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    max-width: 700px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 0.04em;
+}
+
+#dealBtn {
+    display: block;
+    margin: 0 auto 1.5rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: 999px;
+    border: none;
+    background: #ff5fa2;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#dealBtn:hover {
+    opacity: 0.9;
+}
+
+.board {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.player {
+    flex: 1;
+}
+
+.player h2 {
+    margin-bottom: 0.5rem;
+}
+
+.hand {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    min-height: 80px;
+}
+
+.card {
+    width: 50px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    font-size: 0.9rem;
+}
+
+.card.red {
+    color: #ff3b6b;
+}
+
+.score {
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.message {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
